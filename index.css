@@ -1,0 +1,275 @@
+.nav-bar a{
+  font-size: 1.35rem;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.projects1{
+  background-color: #6A3B60;
+
+}
+
+
+
+.carousel{
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel{
+     width: 80%;
+    }
+
+}
+
+
+.title-project{
+  color: white;
+  font-size: 3rem;
+  font-family: 'Electrolize', sans-serif;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.links{
+  text-align: right;
+  float: right;
+}
+
+a.navbar-brand{
+  font-size: 2.2rem;
+  font-family: Arial, sans-serif;
+}
+
+.about-me, .about-me-photo{
+  background-color: #2F0739;
+  height: 80vh;
+
+}
+
+.info{
+  height: 60vh;
+}
+
+.info .heading{
+  float: center;
+
+  color: #2F0739;
+}
+
+
+.heading{
+  margin-top: 10rem;
+  font-size: 8rem;
+  -webkit-text-stroke: 0.5px white;
+  font-family: 'Electrolize', sans-serif;
+  color: #FFFCEB;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+
+.info .para{
+  color: #2F0739;
+
+  margin-left: 0rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.para{
+  font-size: 1.6rem;
+  font-family: 'Electrolize', sans-serif;
+  color: #FFFCEB;
+  text-align: left;
+  padding: 20px;
+  margin-left: 9rem;
+}
+
+#circle{
+  width: 90%;
+  position: relative;
+  z-index: 0;
+  top: 15rem;
+  left: 60px;
+}
+
+
+
+.about-me-photo, .info{
+  position: relative;
+}
+
+
+.skills{
+  display: flex;
+  text-align: center;
+  font-family: 'Electrolize', sans-serif;
+  align-items: center;
+  height: 50vh;
+}
+
+.more{
+  background-color: #390a2f;
+    height: 85vh;
+}
+
+.projects .heading{
+  color: #390a2f;
+}
+
+.projects2{
+height: 55vh;
+}
+
+.projects2 img{
+  width: 100%;
+  padding: 10px;
+}
+
+.centered {
+  position: absolute;
+  top: 25%;
+  display: inline;
+  font-family: 'Electrolize', sans-serif;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+#map, #nutrition, #birthday{
+  opacity: 1.0;
+    transition: 0.6s;
+}
+
+#map:hover, #nutrition:hover, #birthday:hover{
+  opacity: 0.2;
+}
+
+
+.display-none{
+  display: none;
+}
+
+
+.contact{
+  background-color: #6A3B60;
+  height: 75vh;
+  text-align: center;
+
+}
+
+.btn{
+   background-color: #390a2f;
+   color: white;
+   font-size: 25px;
+
+     font-family: 'Electrolize', sans-serif;
+}
+
+.btn:hover{
+  background-color:  #2F0739;
+  color: white;
+}
+
+.btn a{
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+input, textarea{
+  width: 25%;
+  padding: 10px;
+  font-family: 'Electrolize', sans-serif;
+  outline: none;
+  text-decoration: none;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 1px; /* Place the button at the bottom of the page */
+  width: 3.5%;
+  right: 1px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media screen and (max-width: 1562px) {
+  .para{
+    margin-left: 2rem;
+  }
+  #circle{
+    width: 90%;
+    position: relative;
+    z-index: 0;
+    top: 12rem;
+    left: 60px;
+  }
+  #About .para{
+    font-size: 1.21rem;
+  }
+  #About .heading{
+    font-size: 5rem;
+  }
+}
+
+
+
+@media screen and (max-width: 1179px) {
+  .para{
+    text-align: center;
+  }
+  .about-me{
+    height: 50vh;
+
+  }
+  #Skills{
+    height: 40vh;
+  }
+  .skills{
+    padding: 10px 0px;
+  }
+  input, textarea{
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  .about-me-photo{
+    display: none;
+  }
+  #Home .heading{
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .more, .info, #Home, .projects2, .contact{
+    height: auto;
+  }
+
+}
+
+.inline{
+  display: inline-block;
+}
