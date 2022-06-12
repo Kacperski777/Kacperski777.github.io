@@ -111,6 +111,11 @@ a.navbar-brand{
   height: 50vh;
 }
 
+.para{
+  margin: 0 auto;
+  text-align: center;
+}
+
 .more{
   background-color: #390a2f;
     height: 85vh;
@@ -131,8 +136,8 @@ height: 55vh;
 
 .centered {
   position: absolute;
+
   top: 25%;
-  display: inline;
   font-family: 'Electrolize', sans-serif;
   left: 50%;
   font-size: 20px;
@@ -197,7 +202,8 @@ input, textarea{
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 1px; /* Place the button at the bottom of the page */
-  width: 3.5%;
+  width: auto;
+  margin: 1rem;
   right: 1px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -207,7 +213,7 @@ input, textarea{
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 28px; /* Increase font size */
 }
 
 #myBtn:hover {
@@ -216,15 +222,10 @@ input, textarea{
 
 @media screen and (max-width: 1562px) {
   .para{
-    margin-left: 2rem;
+    margin-left: 3rem;
+    font-size: 1.5rem;
   }
-  #circle{
-    width: 90%;
-    position: relative;
-    z-index: 0;
-    top: 12rem;
-    left: 60px;
-  }
+
   #About .para{
     font-size: 1.21rem;
   }
@@ -240,7 +241,7 @@ input, textarea{
     text-align: center;
   }
   .about-me{
-    height: 50vh;
+    height: 60vh;
 
   }
   #Skills{
@@ -266,8 +267,23 @@ input, textarea{
 @media screen and (max-width: 1000px) {
   .more, .info, #Home, .projects2, .contact{
     height: auto;
+
   }
 
+}
+
+
+
+.contact{
+  padding: 2rem;
+}
+.more .para{
+  font-size: 1.3rem;
+}
+
+.para{
+  padding: 2rem;
+  margin: 2rem;
 }
 
 .inline{

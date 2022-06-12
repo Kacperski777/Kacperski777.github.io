@@ -2,32 +2,23 @@
 
 document.querySelector("#map").addEventListener("mouseover", ()=>{
   document.querySelector("#map-para").classList.remove("display-none")
+  document.querySelector("#map").style.opacity = "0.2";
 })
+
+
 
 
 document.querySelector("#nutrition").addEventListener("mouseover", ()=>{
   document.querySelector("#nutrition-para").classList.remove("display-none")
+  document.querySelector("#nutrition").style.opacity = "0.2";
 })
 
 
 document.querySelector("#birthday").addEventListener("mouseover", ()=>{
   document.querySelector("#birthday-para").classList.remove("display-none")
+  document.querySelector("#birthday").style.opacity = "0.2";
 })
 
-
-document.querySelector("#map").addEventListener("mouseout", ()=>{
-  document.querySelector("#map-para").classList.add("display-none")
-})
-
-
-document.querySelector("#nutrition").addEventListener("mouseout", ()=>{
-  document.querySelector("#nutrition-para").classList.add("display-none")
-})
-
-
-document.querySelector("#birthday").addEventListener("mouseout", ()=>{
-  document.querySelector("#birthday-para").classList.add("display-none")
-})
 
 
 //Get the button:
