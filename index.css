@@ -130,6 +130,8 @@ a.navbar-brand{
 }
 
 .more-2{
+   background-color: #390a2f;
+    height: 85vh;
    display: flex;
   justify-content: center;
   align-items: center;
