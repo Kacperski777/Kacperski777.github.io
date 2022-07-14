@@ -49,6 +49,9 @@ a.navbar-brand{
 .about-me, .about-me-photo{
   background-color: #2F0739;
   height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -116,6 +119,9 @@ a.navbar-brand{
 .more{
   background-color: #390a2f;
     height: 85vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects .heading{
