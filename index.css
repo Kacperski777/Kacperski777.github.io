@@ -48,14 +48,14 @@ a.navbar-brand{
 
 .about-me {
   background-color: #2F0739;
-  height: 80vh;
+  height: 100vh;
 
 }
 
 
 .about-me-photo{
   background-color: #2F0739;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
