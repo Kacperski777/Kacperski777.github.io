@@ -46,7 +46,14 @@ a.navbar-brand{
   font-family: Arial, sans-serif;
 }
 
-.about-me, .about-me-photo{
+.about-me {
+  background-color: #2F0739;
+  height: 80vh;
+
+}
+
+
+.about-me-photo{
   background-color: #2F0739;
   height: 80vh;
   display: flex;
