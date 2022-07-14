@@ -119,10 +119,16 @@ a.navbar-brand{
 .more{
   background-color: #390a2f;
     height: 85vh;
-    display: flex;
+  
+}
+
+.more-2{
+   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
 
 .projects .heading{
   color: #390a2f;
