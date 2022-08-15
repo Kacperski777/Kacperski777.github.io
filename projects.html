@@ -9,10 +9,17 @@
       <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+       <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="index.css">
   </head>
-  <body class="projects1">
-  <div class="container-fluid">
+  <body onload="myFunction()" >
+
+
+    <div class="loader" >KS</div>
+
+
+
+  <div class="container-fluid projects1" style="display: none;">
     <div class="row">
       <div class="col-xl-12 yas" style="text-align: center; ">
           <h1 class="title-project">Nutrition Tracker</h1>
@@ -186,5 +193,23 @@
         </div>
       </div>
     </div>
+
+
+
+    <script>
+      var myVar;
+  
+      function myFunction(){
+        myVar = setTimeout(showPage, 2000)
+      }
+  
+      function showPage(){
+        document.getElementsByClassName("loader")[0].style.display = "none";
+      document.getElementsByClassName("container-fluid")[0].style.display = "block";
+      }
+  
+  
+    </script>
+  
   </body>
 </html>
