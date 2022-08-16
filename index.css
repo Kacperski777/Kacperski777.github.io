@@ -19,6 +19,19 @@ img{
   margin: auto;
 }
 
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5vw;
+  height: 20vw;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 3vw;
+  height: 3vw;
+}
+
+
 @media screen and (max-width: 1000px) {
   .carousel{
      width: 80%;
@@ -314,8 +327,13 @@ input, textarea{
 
   }
 
+  .carousel-control-next,
+.carousel-control-prev {
+  width: 5vw;
+  height: 33vw;
 }
 
+}
 
 
 
