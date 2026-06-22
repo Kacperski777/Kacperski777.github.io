@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link rel="stylesheet" href="circle.css">
@@ -23,124 +22,369 @@
 
 
  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bar">
-        <div class="mx-auto d-lg-flex d-block flex-lg-nowrap">
-            <a class="navbar-brand"><em>KS</em></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarsExample11">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Skills">Skill</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projectsz">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  href="#contacts">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="sticky-nav">
+        <ul class="nav-header" id="nav-header">
+            <li class="nav-tab"><a href="#Home" class="nav-link-item brand-link">KS</a></li>
+            <li class="nav-tab"><a href="#Skills" class="nav-link-item">Expertise</a></li>
+            <li class="nav-tab"><a href="#About" class="nav-link-item">About</a></li>
+            <li class="nav-tab"><a href="#Projectsz" class="nav-link-item">Projects</a></li>
+            <li class="nav-tab"><a href="#contacts" class="nav-link-item">Contact</a></li>
+            <div class="nav-cursor" id="nav-cursor"></div>
+        </ul>
     </nav>
-  <div class="container-fluid">
+  <div class="container-fluid main-container">
   <div class="row">
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
-    <div class="col-xl-6 col-m-12  about-me" id="Home" >
-        <h1 class="heading" data-aos="fade-right" data-aos-duration="2000">Kacper Sliwinski</h1>
-        <p class="para" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
-          Currently Studying Computer Science at the University of Worcester.
-          <br>
-          Aspiring Front-End Website Developer, With High Hopes and Higher Ambitions.
-          <br>
-          Working Hard Towards My Career Goal. Full of Energy and Hunger for Success.
-          ;)
-          </p>
-    </div>
-    <div class="col-xl-6 col-m-12 about-me-photo" >
+    <div class="col-xl-6 col-md-12 about-me" id="Home" >
+      <div class="hero-left-content">
+        <h1 class="hero-title" data-aos="fade-right" data-aos-duration="1500">
+          <span class="first-name">Kacper</span>
+          <span class="last-name">Sliwinski</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+          Commercial Software Developer bridging the gap between engineering and user experience design. Experienced in crafting modern web modules, optimizing mobile applications, and translating visual concepts into clean, high-performing code.
+        </p>
+        
+        <!-- CTA Action Area -->
+        <div class="hero-ctas" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="250">
+          <a href="#Projectsz" class="cta-btn cta-primary">View My Work</a>
+          <a href="Kacper_Sliwinski_CV_v2.docx" class="cta-btn cta-secondary" download>
+            <i class="fas fa-download me-2"></i>Download CV
+          </a>
+        </div>
+        
+        <hr class="hero-divider" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+        
+        <div class="hero-stats" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+          <div class="stat-item">
+            <span class="stat-num">+3</span>
+            <span class="stat-desc">Years of Commercial<br>Engineering Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">+10</span>
+            <span class="stat-desc">Deployed Production<br>Web & Mobile Apps</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-desc">Responsive Cross-Platform<br>Delivery</span>
+          </div>
+        </div>
 
-      <img id='circle' src="image.jpg" alt="Circle" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500">
+        <div class="hero-tech-stack" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
+          <span class="tech-label">Stack:</span>
+          <div class="tech-badges">
+            <span class="tech-badge badge-react"><i class="fab fa-react"></i> React</span>
+            <span class="tech-badge badge-vue"><i class="fab fa-vuejs"></i> Vue</span>
+            <span class="tech-badge badge-figma"><i class="fab fa-figma"></i> Figma</span>
+            <span class="tech-badge badge-flutter">
+              <svg viewBox="0 0 24 24" class="tech-icon-svg"><path fill="currentColor" d="M14.3 2.3L5 11.6l4.7 4.7 9.3-9.3zM2 12l9.3 9.3h4.7L6.7 12z"/></svg>
+              Flutter
+            </span>
+            <span class="tech-badge badge-nestjs"><i class="fab fa-node-js"></i> NestJS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-md-12 about-me-photo" >
+      <div class="hero-card-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+        <div class="hero-card-browser">
+          <div class="browser-header">
+            <div class="browser-dots">
+              <span class="dot dot-close"></span>
+              <span class="dot dot-minimize"></span>
+              <span class="dot dot-maximize"></span>
+            </div>
+            <div class="browser-search">kacper.dev</div>
+          </div>
+          <div class="browser-content">
+            <img src="image.jpg" alt="Kacper Sliwinski" class="browser-photo-img">
+          </div>
+        </div>
+        <a href="#Skills" class="card-arrow-btn">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-xl-6 info" id="Skills">
+      <h1 class="heading" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">Core Expertise</h1>
+      <p class="para" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+        Leveraging a comprehensive commercial full-stack engineering toolkit to build scalable web platforms and optimized cross-platform mobile apps. From wireframing initial user flows in Figma to deploying resilient codebases, I focus on performance, accessibility, and intuitive interface interactions.
+      </p>
+    </div>
+    <div class="col-xl-6  info">
+      <!-- Skills Tab Bar -->
+      <div class="skills-tabs-container" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="250">
+        <button class="skills-tab-btn active" data-category="frontend">Frontend & Mobile</button>
+        <button class="skills-tab-btn" data-category="backend">Backend & Data</button>
+        <button class="skills-tab-btn" data-category="uiux">UI/UX Design</button>
+      </div>
 
-    </div>
-    <div class="col-xl-6  info" id="Skills">
-<div class="container-fluid">
-  <div class="row skills">
-    <div class="col-xl-4 col-sm-6 test" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
-      <div class="c100 p100 orange center">
-      <span>HTML</span>
-      <div class="slice">
-        <div class="bar"></div>
-        <div class="fill"></div>
-      </div>
-</div>
-    </div>
-    <div class="col-xl-4 col-sm-6 test" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
-      <div class="c100 p100 green center">
-      <span>CSS</span>
-      <div class="slice">
-        <div class="bar"></div>
-        <div class="fill"></div>
-      </div>
-    </div>
-  </div>
-    <div class="col-xl-4 col-sm-6 test" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
-      <div class="c100 p100 blue center">
-      <span>JS</span>
-      <div class="slice">
-        <div class="bar"></div>
-        <div class="fill"></div>
-      </div>
-    </div>
-      </div>
-    <div class="col-xl-4 col-sm-6 test" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">
-      <div class="c100 p100 red center">
-      <span>SASS</span>
-      <div class="slice">
-        <div class="bar"></div>
-        <div class="fill"></div>
-      </div>
-    </div>
-      </div>
-    <div class="col-xl-4 col-sm-6 test" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600">
-      <div class="c100 p100 purple center">
-      <span>React</span>
-      <div class="slice">
-        <div class="bar"></div>
-        <div class="fill"></div>
-      </div>
-    </div>
-    </div>
-    <div class="col-xl-4 col-sm-6 test" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="700">
-      <div class="c100 p100 pink center">
-      <span>JQuery</span>
-      <div class="slice">
-        <div class="bar"></div>
-        <div class="fill"></div>
-      </div>
-    </div>
-    </div>
-  </div>
+      <div class="skills-grid" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="350">
+        <!-- ==================== FRONTEND & MOBILE ==================== -->
+        <!-- Vue.js -->
+        <div class="pixel-card brand-vue cat-frontend active-category" data-colors='["#42B883", "#35495E", "#41B883", "#00C58E"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path class="logo-primary" fill="currentColor" d="M24 1.5h-5.7L12 13.2 5.7 1.5H0L12 22.5L24 1.5z"/>
+                <path class="logo-secondary" fill="currentColor" d="M5.7 1.5h4.5L12 5.4 13.8 1.5h4.5L12 11.7 5.7 1.5z"/>
+              </svg>
+            </span>
+            <span class="tech-name">Vue.js</span>
+          </div>
+        </div>
 
-</div>
+        <!-- React -->
+        <div class="pixel-card brand-react cat-frontend active-category" data-colors='["#61DAFB", "#00D8FF", "#00BCFF", "#0088CC"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" />
+              </svg>
+            </span>
+            <span class="tech-name">React</span>
+          </div>
+        </div>
 
+        <!-- Blazor -->
+        <div class="pixel-card brand-blazor cat-frontend active-category" data-colors='["#512BD4", "#704EE6", "#3C1B9B", "#6236E2"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M23.8337 8.1013a13.9123 13.9123 0 0 1-13.6424 11.72 10.1053 10.1053 0 0 1-1.994-.121 6.111 6.111 0 0 1-5.0824-5.7607 5.9344 5.9344 0 0 1 11.867-.0838c.025.9835-.4011 1.8464-1.277 1.8713-.9356 0-1.3742-.6677-1.3742-1.5674v-2.5001a1.5313 1.5313 0 0 0-1.5196-1.5328H8.7152a3.6481 3.6481 0 1 0 2.6948 6.0794l.0733-.1093.0734.1213a2.5807 2.5807 0 0 0 2.2007 1.0479 2.9088 2.9088 0 0 0 2.6947-3.0406 7.912 7.912 0 0 0-.217-1.9324 7.4043 7.4043 0 0 0-14.6395 1.6033 7.4971 7.4971 0 0 0 7.307 7.4043s.549.05 1.1677.0357a15.8029 15.8029 0 0 0 8.4747-2.5283c.036-.025.0719.025.048.0614a12.4392 12.4392 0 0 1-9.6901 3.9625A8.7442 8.7442 0 0 1 .003 13.8603a9.049 9.049 0 0 1 3.6349-7.2471 8.8634 8.8634 0 0 1 5.229-1.7262h2.813a7.9145 7.9145 0 0 0 5.8386-2.5777.1093.1093 0 0 1 .0594-.034.1115.1115 0 0 1 .1195.0522.113.113 0 0 1 .0155.0672 7.9345 7.9345 0 0 1-1.2274 3.5493.1075.1075 0 0 0-.0132.0609.1098.1098 0 0 0 .0724.0945.109.109 0 0 0 .0619.0033 8.5054 8.5054 0 0 0 5.9134-4.876.1554.1554 0 0 1 .0546-.0527.1497.1497 0 0 1 .147 0 .1535.1535 0 0 1 .0546.0527 10.779 10.779 0 0 1 1.0575 6.8746zm-14.9383 3.527a2.188 2.188 0 1 0 2.1877 2.1878v-2.0425a.1577.1577 0 0 0-.1497-.1497Z" />
+              </svg>
+            </span>
+            <span class="tech-name">Blazor</span>
+          </div>
+        </div>
 
+        <!-- Flutter -->
+        <div class="pixel-card brand-flutter cat-frontend active-category" data-colors='["#02569B", "#0175C2", "#13B9FD", "#47D1FD"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path class="logo-primary" fill="currentColor" d="M14.31 2.35L5 11.66l4.67 4.67 9.31-9.31h-4.67z"/>
+                <path class="logo-secondary" fill="currentColor" d="M9.67 16.33L5 21h4.67l4.67-4.67H9.67z"/>
+                <path class="logo-tertiary" fill="currentColor" d="M2 11.66l4.67-4.67h4.67L6.67 11.66 11.34 16.33H6.67L2 11.66z"/>
+              </svg>
+            </span>
+            <span class="tech-name">Flutter</span>
+          </div>
+        </div>
 
-    </div>
-    <div class="col-xl-6 info">
+        <!-- Pinia -->
+        <div class="pixel-card brand-pinia cat-frontend active-category" data-colors='["#FFE066", "#FFD11A", "#E6B800", "#FFF3BF"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M13.277.002c-.079-.01-.193.024-.31.09a2.346 2.346 0 0 0-.415.311c-.301.274-.65.68-.985 1.176-.672.99-1.31 2.356-1.485 3.785-.12.977-.154 1.849-.074 2.578a5.878 5.878 0 0 1 1.956-.338c.922 0 1.804.218 2.618.613.197-.637.34-1.395.445-2.246.175-1.429-.1-2.907-.499-4.028a6.695 6.695 0 0 0-.653-1.378 2.296 2.296 0 0 0-.321-.401c-.097-.092-.199-.153-.277-.162zm-6.81 2.965a.603.603 0 0 0-.288.117l-.013.011a.863.863 0 0 0-.177.327c-.051.15-.094.344-.126.565a8.205 8.205 0 0 0-.044 1.637c.08 1.222.397 2.665 1.079 3.769.093.15.193.296.294.442.726-.776 1.567-1.385 2.488-1.768-.1-.79-.06-1.714.066-2.744.038-.31.1-.616.176-.916a6.45 6.45 0 0 0-1.692-1.08 4.575 4.575 0 0 0-1.29-.366 1.805 1.805 0 0 0-.474.006zm11.751 1.789c-.21.003-.442.022-.687.06a5.974 5.974 0 0 0-2.132.76c-.009.146-.019.291-.036.437-.11.888-.258 1.684-.475 2.364.848.468 1.614 1.13 2.267 1.94.823-.85 1.43-2.05 1.787-3.13.187-.57.304-1.1.35-1.514.022-.207.027-.38.017-.51-.01-.133-.042-.206-.04-.202a.35.35 0 0 0-.114-.072 1.516 1.516 0 0 0-.375-.1 3.42 3.42 0 0 0-.562-.033zm-6.254 3.139c-2.014 0-3.83 1.087-5.147 2.834-1.316 1.748-2.131 4.16-2.131 6.807 0 2.65.806 4.258 2.131 5.218C8.132 23.707 9.96 24 11.964 24c2.004 0 3.831-.293 5.147-1.246 1.326-.96 2.133-2.568 2.133-5.218 0-2.647-.816-5.059-2.133-6.806-1.317-1.748-3.134-2.835-5.147-2.835Zm-3.297 5.209a1.282 1.282 0 0 1 .292 2.518c.115.094.177.201.164.307-.032.265-.521.424-1.09.354-.571-.07-1.007-.342-.974-.607.024-.198.302-.336.678-.364a1.282 1.282 0 0 1 .93-2.208zm6.284.22a1.282 1.282 0 0 1 .726 2.303c.437.058.757.244.757.466 0 .267-.466.483-1.04.483-.574 0-1.04-.216-1.04-.483 0-.098.063-.189.17-.265a1.282 1.282 0 0 1 .427-2.505zm-6.318.215a.822 8.22 0 1 0 .028 1.645.822 8.22 0 0 0-.028-1.645zm6.284.22a.822 8.22 0 1 0 .027 1.644.822 8.22 0 0 0-.027-1.644zm-6.543.109a.338.338 0 1 1-.023.677.338.338 0 0 1 .023-.677zm6.284.22a.339.339 0 1 1-.018 0h.018zm-3.91 1.179c.17.252.432.404.808.447.372.043.694-.05.976-.28a.145.145 0 1 1 .183.226c-.344.28-.745.394-1.192.343-.445-.051-.79-.24-1.016-.574a.145.145 0 1 1 .24-.162z" />
+              </svg>
+            </span>
+            <span class="tech-name">Pinia</span>
+          </div>
+        </div>
 
-      <h1 class="heading" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">Skills.</h1>
-          <p class="para" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1100">
-            Fully Focused On <b>Mastering</b> All Necessary Front-End Web Developer Requirements.
-            My Current Set Of Skills Are Listed Here. Learning New Concepts And Understanding Is The Best Feeling.
-            </p>
+        <!-- SASS -->
+        <div class="pixel-card brand-sass cat-frontend active-category" data-colors='["#CC6699", "#CF649A", "#BF4080", "#FF80BF"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zM9.615 15.998c.175.645.156 1.248-.024 1.792l-.065.18c-.024.061-.052.12-.078.176-.14.29-.326.56-.555.81-.698.759-1.672 1.047-2.09.805-.45-.262-.226-1.335.584-2.19.871-.918 2.12-1.509 2.12-1.509v-.003l.108-.061zm9.911-10.861c-.542-2.133-4.077-2.834-7.422-1.645-1.989.707-4.144 1.818-5.693 3.267C4.568 8.48 4.275 9.98 4.396 10.607c.427 2.211 3.457 3.657 4.703 4.73v.006c-.367.18-3.056 1.529-3.686 2.925-.675 1.47.105 2.521.615 2.655 1.575.436 3.195-.36 4.065-1.649.84-1.261.766-2.881.404-3.676.496-.135 1.08-.195 1.83-.104 2.101.24 2.521 1.56 2.43 2.1-.09.539-.523.854-.674.944-.15.091-.195.12-.181.181.015.09.091.09.21.075.165-.03 1.096-.45 1.141-1.471.045-1.29-1.186-2.729-3.375-2.7-.9.016-1.471.091-1.875.256-.03-.045-.061-.075-.105-.105-1.35-1.455-3.855-2.475-3.75-4.41.03-.705.285-2.564 4.8-4.814 3.705-1.846 6.661-1.335 7.171-.21.733 1.604-1.576 4.59-5.431 5.024-1.47.165-2.235-.404-2.431-.615-.209-.225-.239-.24-.314-.194-.12.06-.045.255 0 .375.12.3.585.825 1.396 1.095.704.225 2.43.359 4.5-.45 2.324-.899 4.139-3.405 3.614-5.505l.073.067z" />
+              </svg>
+            </span>
+            <span class="tech-name">SASS</span>
+          </div>
+        </div>
+
+        <!-- Dart -->
+        <div class="pixel-card brand-dart cat-frontend active-category" data-colors='["#00B4AB", "#00CCBE", "#00968F", "#80EAE4"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.014-.87.195-.87.195L6.341 4.105l10.498.001z" />
+              </svg>
+            </span>
+            <span class="tech-name">Dart</span>
+          </div>
+        </div>
+
+        <!-- ==================== BACKEND & DATA ==================== -->
+        <!-- NestJS -->
+        <div class="pixel-card brand-nestjs cat-backend" data-colors='["#E0234E", "#EA2857", "#DF234F", "#B31B3E"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M17.33 3.666a1 1 0 0 0-.665-.25L6.666 4.666a1 1 0 0 0-.666.25l-5.333 4.666a1 1 0 0 0-.333.667v8a1 1 0 0 0 .333.667l5.333 4.666a1 1 0 0 0 .666.25l10-3.333a1 1 0 0 0 .667-.667V7a1 1 0 0 0-.334-.667l-5.333-2.667zm-5.33 4.334l4.666 2.333v6.333l-4.666 2.333-4.666-2.333V10.33l4.666-2.33z" />
+              </svg>
+            </span>
+            <span class="tech-name">NestJS</span>
+          </div>
+        </div>
+
+        <!-- Express.js -->
+        <div class="pixel-card brand-express cat-backend" data-colors='["#303030", "#383838", "#484848", "#202020"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
+              </svg>
+            </span>
+            <span class="tech-name">Express.js</span>
+          </div>
+        </div>
+
+        <!-- Node.js -->
+        <div class="pixel-card brand-nodejs cat-backend" data-colors='["#339933", "#43853D", "#3E863D", "#66CC66"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" />
+              </svg>
+            </span>
+            <span class="tech-name">Node.js</span>
+          </div>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="pixel-card brand-postgresql cat-backend" data-colors='["#336791", "#3B7BB0", "#2C567B", "#5C99C6"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z" />
+              </svg>
+            </span>
+            <span class="tech-name">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- SQLite -->
+        <div class="pixel-card brand-sqlite cat-backend" data-colors='["#003B57", "#0F80B5", "#002F44", "#4FAAD2"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M21.678.521c-1.032-.92-2.28-.55-3.513.544a8.71 8.71 0 0 0-.547.535c-2.109 2.237-4.066 6.38-4.674 9.544.237.48.422 1.093.544 1.561a13.044 13.044 0 0 1 .164.703s-.019-.071-.096-.296l-.05-.146a1.689 1.689 0 0 0-.033-.08c-.138-.32-.518-.995-.686-1.289-.143.423-.27.818-.376 1.176.484.884.778 2.4.778 2.4s-.025-.099-.147-.442c-.107-.303-.644-1.244-.772-1.464-.217.804-.304 1.346-.226 1.478.152.256.296.698.422 1.186.286 1.1.485 2.44.485 2.44l.017.224a22.41 22.41 0 0 0 .056 2.748c.095 1.146.273 2.13.5 2.657l.155-.084c-.334-1.038-.47-2.399-.41-3.967.09-2.398.642-5.29 1.661-8.304 1.723-4.55 4.113-8.201 6.3-9.945-1.993 1.8-4.692 7.63-5.5 9.788-.904 2.416-1.545 4.684-1.931 6.857.666-2.037 2.821-2.912 2.821-2.912s1.057-1.304 2.292-3.166c-.74.169-1.955.458-2.362.629-.6.251-.762.337-.762.337s1.945-1.184 3.613-1.72C21.695 7.9 24.195 2.767 21.678.521m-18.573.543A1.842 1.842 0 0 0 1.27 2.9v16.608a1.84 1.84 0 0 0 1.835 1.834h9.418a22.953 22.953 0 0 1-.052-2.707c-.006-.062-.011-.141-.016-.2a27.01 27.01 0 0 0-.473-2.378c-.121-.47-.275-.898-.369-1.057-.116-.197-.098-.31-.097-.432 0-.12.015-.245.037-.386a9.98 9.98 0 0 1 .234-1.045l.217-.028c-.017-.035-.014-.065-.031-.097l-.041-.381a32.8 32.8 0 0 1 .382-1.194l.2-.019c-.008-.016-.01-.038-.018-.053l-.043-.316c.63-3.28 2.587-7.443 4.8-9.791.066-.069.133-.128.198-.194Z" />
+              </svg>
+            </span>
+            <span class="tech-name">SQLite</span>
+          </div>
+        </div>
+
+        <!-- Apache Superset -->
+        <div class="pixel-card brand-superset cat-backend" data-colors='["#00A699", "#3FC1B6", "#007A70", "#63D0C6"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.168 6.045C2.603 6.045 0 8.579 0 12.014c0 3.434 2.603 5.941 6.168 5.941 2.184 0 3.888-1.026 5.775-3.078 1.53 2.033 4.037 3.136 5.89 3.078 3.566 0 6.167-2.503 6.167-5.941 0-3.438-2.601-5.97-6.168-5.97-2.864 0-5.138 2.425-5.771 3.173-.76-.9-1.674-1.665-2.682-2.274-1.019-.588-2.084-.898-3.211-.898Zm2.875 1.303c1.156.595 1.952 1.42 2.639 2.304-.534.63-1.245 1.483-1.739 2.07-.56-.658-1.58-1.907-2.609-2.308ZM6.186 9.703c1.018.027 1.81.458 3.435 2.408-1.158 1.378-2.202 2.244-3.435 2.244-1.51 0-2.41-.99-2.41-2.31s.906-2.382 2.41-2.342zm11.535 0c1.51 0 2.408 1.026 2.408 2.342 0 1.315-.862 2.301-2.402 2.31-.571-.037-1.529-.026-3.442-2.314l.074-.09.002.002c1.122-1.328 2.097-2.25 3.36-2.25zm-3.762 2.738c.61.68 1.795 1.988 2.713 2.24l-1.684 2.016h-.002c-.753-.371-2.031-1.134-2.716-2.215l1.689-2.04z" />
+              </svg>
+            </span>
+            <span class="tech-name">Superset</span>
+          </div>
+        </div>
+
+        <!-- ==================== UI/UX DESIGN ==================== -->
+        <!-- Figma -->
+        <div class="pixel-card brand-figma cat-uiux" data-colors='["#F24E1E", "#A259FF", "#1ABC9C", "#0ACF83"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path class="logo-figma-1" fill="currentColor" d="M8 2a4 4 0 0 0-4 4 4 4 0 0 0 8 0V2H8z"/>
+                <path class="logo-figma-2" fill="currentColor" d="M8 10a4 4 0 0 0-4 4 4 4 0 0 0 8 0v-8H8z"/>
+                <path class="logo-figma-3" fill="currentColor" d="M8 18a4 4 0 0 0-4 4 4 4 0 0 0 8 0v-4H8z"/>
+                <path class="logo-figma-4" fill="currentColor" d="M12 10a4 4 0 1 0 8 0 4 4 0 0 0-8 0z"/>
+                <path class="logo-figma-5" fill="currentColor" d="M12 2a4 4 0 1 0 8 0 4 4 0 0 0-8 0z"/>
+              </svg>
+            </span>
+            <span class="tech-name">Figma</span>
+          </div>
+        </div>
+
+        <!-- Canva -->
+        <div class="pixel-card brand-canva cat-uiux" data-colors='["#00C4CC", "#7D2AE8", "#00B2BA", "#6218C7"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM6.962 7.68c.754 0 1.337.549 1.405 1.2.069.583-.171 1.097-.822 1.406-.343.171-.48.172-.549.069-.034-.069 0-.137.069-.206.617-.514.617-.926.548-1.508-.034-.378-.308-.618-.583-.618-1.2 0-2.914 2.674-2.674 4.629.103.754.549 1.646 1.509 1.646.308 0 .65-.103.96-.24.5-.264.799-.47 1.097-.8-.073-.885.704-2.046 1.851-2.046.515 0 .926.205.96.583.068.514-.377.582-.514.582s-.378-.034-.378-.17c-.034-.138.309-.07.275-.378-.035-.206-.24-.274-.446-.274-.72 0-1.131.994-1.029 1.611.035.275.172.549.447.549.205 0 .514-.31.617-.755.068-.308.343-.514.583-.514.102 0 .17.034.205.171v.138c-.034.137-.137.548-.102.651 0 .069.034.171.17.171.092 0 .436-.18.777-.459.117-.59.253-1.298.253-1.357.034-.24.137-.48.617-.48.103 0 .171.034.205.171v.138l-.136.617c.445-.583 1.097-.994 1.508-.994.172 0 .309.102.309.274 0 .103 0 .274-.069.446-.137.377-.309.96-.412 1.474 0 .137.035.274.207.274.171 0 .685-.206 1.096-.754l.007-.004c-.002-.068-.007-.134-.007-.202 0-.411.035-.754.104-.994.068-.274.411-.514.617-.514.103 0 .205.069.205.171 0 .035 0 .103-.034.137-.137.446-.24.857-.24 1.269 0 .24.034.582.102.788 0 .034.035.069.07.069.068 0 .548-.445.89-1.028-.308-.206-.48-.549-.48-.96 0-.72.446-1.097.858-1.097.343 0 .617.24.617.72 0 .308-.103.65-.274.96h.102a.77.77 0 0 0 .584-.24.293.293 0 0 1 .134-.117c.335-.425.83-.74 1.41-.74.48 0 .924.205.959.582.068.515-.378.618-.515.618l-.002-.002c-.138 0-.377-.035-.377-.172 0-.137.309-.068.274-.376-.034-.206-.24-.275-.446-.275-.686 0-1.13.891-1.028 1.611.034.275.171.583.445.583.206 0 .515-.308.652-.754.068-.274.343-.514.583-.514.103 0 .17.034.205.171 0 .069 0 .206-.137.652-.17.308-.171.48-.137.617.034.274.171.48.309.583.034.034.068.102.068.102 0 .069-.034.138-.137.138-.034 0-.068 0-.103-.035-.514-.205-.72-.548-.789-.891-.205.24-.445.377-.72.377-.445 0-.89-.411-.96-.926a1.609 1.609 0 0 1 .075-.649c-.203.13-.422.203-.623.203h-.17c-.447.652-.927 1.098-1.27 1.303a.896.896 0 0 1-.377.104c-.068 0-.171-.035-.205-.104-.095-.152-.156-.392-.193-.667-.481.527-1.145.805-1.453.805-.343 0-.548-.206-.582-.55v-.376c.102-.754.377-1.2.377-1.337a.074.074 0 0 0-.069-.07c-.24 0-1.028.824-1.166 1.373l-.103.445c-.068.309-.377.515-.582.515-.103 0-.172-.035-.206-.172v-.137l.046-.233c-.435.31-.87.508-1.075.508-.308 0-.48-.172-.514-.412-.206.274-.445.412-.754.412-.352 0-.696-.24-.862-.593-.244.275-.523.553-.852.764-.48.309-1.028.549-1.68.549-.582 0-1.097-.309-1.371-.583-.412-.377-.651-.96-.686-1.509-.205-1.68.823-3.84 2.4-4.8.378-.205.755-.343 1.132-.343zm9.77 3.291c-.104 0-.172.172-.172.343 0 .274.137.583.309.755a1.74 1.74 0 0 0 .102-.583c0-.343-.137-.515-.24-.515z" />
+              </svg>
+            </span>
+            <span class="tech-name">Canva</span>
+          </div>
+        </div>
+
+        <!-- Wireframing -->
+        <div class="pixel-card brand-wireframing cat-uiux" data-colors='["#4B5563", "#6B7280", "#374151", "#9CA3AF"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM6 6h12v2H6V6zm0 4h12v2H6v-2zm0 4h7v2H6v-2z"/>
+              </svg>
+            </span>
+            <span class="tech-name">Wireframing</span>
+          </div>
+        </div>
+
+        <!-- User Journey Mapping -->
+        <div class="pixel-card brand-mapping cat-uiux" data-colors='["#E53E3E", "#DD6B20", "#3182CE", "#319795"]'>
+          <div class="pixel-canvas-container">
+            <canvas class="pixel-canvas"></canvas>
+          </div>
+          <div class="pixel-card-content">
+            <span class="tech-logo">
+              <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 15c-1.1 0-2 .9-2 2H7c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2h10c0 1.1.9 2 2 2s2-.9 2-2 .9-2-2-2zM5 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm14 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-7 3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+              </svg>
+            </span>
+            <span class="tech-name">Journey Maps</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-xl-6 more" id="About">
 
@@ -234,5 +478,7 @@
   </script>
 
 
+
   </body>
+
 </html>
