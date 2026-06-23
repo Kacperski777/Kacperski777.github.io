@@ -138,6 +138,20 @@ img {
   list-style: none;
   align-items: center;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-header.scrolled {
+  opacity: 0.75;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-header.scrolled:hover {
+  opacity: 1;
+  background-color: #FFFFFF;
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15);
 }
 
 .nav-tab {

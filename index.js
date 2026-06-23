@@ -76,10 +76,21 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  if (mybutton) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  const navHeader = document.querySelector(".nav-header");
+  if (navHeader) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      navHeader.classList.add("scrolled");
+    } else {
+      navHeader.classList.remove("scrolled");
+    }
   }
 }
 
