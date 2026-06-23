@@ -68,26 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.querySelector("#map").addEventListener("mouseover", ()=>{
-  document.querySelector("#map-para").classList.remove("display-none")
-  document.querySelector("#map").style.opacity = "0.2";
-})
-
-
-
-
-document.querySelector("#nutrition").addEventListener("mouseover", ()=>{
-  document.querySelector("#nutrition-para").classList.remove("display-none")
-  document.querySelector("#nutrition").style.opacity = "0.2";
-})
-
-
-document.querySelector("#birthday").addEventListener("mouseover", ()=>{
-  document.querySelector("#birthday-para").classList.remove("display-none")
-  document.querySelector("#birthday").style.opacity = "0.2";
-})
-
-
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -280,3 +260,23 @@ class PixelCanvasAnimation {
     this.animationFrameId = requestAnimationFrame(loop);
   }
 }
+
+// Global function to switch between prototype images
+window.changePrototypeImage = function(targetId, newSrc, btnElement) {
+  const mainImg = document.getElementById(targetId);
+  if (mainImg) {
+    mainImg.style.opacity = "0.3";
+    setTimeout(() => {
+      mainImg.src = newSrc;
+      mainImg.style.opacity = "1";
+    }, 200);
+  }
+  
+  // Update active class on thumbnails
+  const parent = btnElement.parentElement;
+  if (parent) {
+    const buttons = parent.querySelectorAll(".thumbnail-btn");
+    buttons.forEach(btn => btn.classList.remove("active"));
+  }
+  btnElement.classList.add("active");
+};

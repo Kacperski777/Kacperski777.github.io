@@ -7,7 +7,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <link rel="stylesheet" href="circle.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="images/favicon.png" />
     <script
@@ -27,16 +26,18 @@
             <li class="nav-tab"><a href="#Home" class="nav-link-item brand-link">KS</a></li>
             <li class="nav-tab"><a href="#Skills" class="nav-link-item">Expertise</a></li>
             <li class="nav-tab"><a href="#About" class="nav-link-item">About</a></li>
-            <li class="nav-tab"><a href="#Projectsz" class="nav-link-item">Projects</a></li>
+            <li class="nav-tab"><a href="#Projectsz" class="nav-link-item">Prototypes</a></li>
             <li class="nav-tab"><a href="#contacts" class="nav-link-item">Contact</a></li>
             <div class="nav-cursor" id="nav-cursor"></div>
         </ul>
     </nav>
-  <div class="container-fluid main-container">
-  <div class="row">
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
-    <div class="col-xl-6 col-md-12 about-me" id="Home" >
-      <div class="hero-left-content">
+
+  <section id="Home" class="hero-section">
+    <div class="container-fluid section-container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-md-12 about-me">
+          <div class="hero-left-content">
         <h1 class="hero-title" data-aos="fade-right" data-aos-duration="1500">
           <span class="first-name">Kacper</span>
           <span class="last-name">Sliwinski</span>
@@ -84,9 +85,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-6 col-md-12 about-me-photo" >
-      <div class="hero-card-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+        </div>
+        <div class="col-xl-6 col-md-12 about-me-photo">
+          <div class="hero-card-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
         <div class="hero-card-browser">
           <div class="browser-header">
             <div class="browser-dots">
@@ -105,14 +106,19 @@
         </a>
       </div>
     </div>
-    <div class="col-xl-6 info" id="Skills">
-      <h1 class="heading" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">Core Expertise</h1>
+  </section>
+
+  <section id="Skills" class="skills-section">
+    <div class="container-fluid section-container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 info">
+          <h1 class="heading" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">Core Expertise</h1>
       <p class="para" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
         Leveraging a comprehensive commercial full-stack engineering toolkit to build scalable web platforms and optimized cross-platform mobile apps. From wireframing initial user flows in Figma to deploying resilient codebases, I focus on performance, accessibility, and intuitive interface interactions.
       </p>
-    </div>
-    <div class="col-xl-6  info">
-      <!-- Skills Tab Bar -->
+        </div>
+        <div class="col-xl-6 info">
+          <!-- Skills Tab Bar -->
       <div class="skills-tabs-container" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="250">
         <button class="skills-tab-btn active" data-category="frontend">Frontend & Mobile</button>
         <button class="skills-tab-btn" data-category="backend">Backend & Data</button>
@@ -386,83 +392,184 @@
         </div>
       </div>
     </div>
-    <div class="col-xl-6 more" id="About">
+  </section>
 
-      <h1 class="heading" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">My Story.</h1>
-          <p class="para" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
-          I am currently 21 Years Old. Moved from Poland to England when I was 12 in 2012. <br/><br/>
-           Moving countries and not being able to speak with people at my new School because of the language barrier really motivated me to work hard everyday to learn English. <br/><br/>
-          When I got introduced to Computer Science and all the different Programming Languages it made me realise it's just like learning English. <br/><br/>
-          However, for a long time I was unsure what I want to do as my Career, I was always fascinated with Computers, the Internet and how it all works. <br/><br/>
-          Backend wasn't for me, I like to be creative and make stuff. When I was 10, I tried to make a game in RPG Maker :D. <br/><br/>
-          At my University I was introduced to Web Development. Creating Websites and Web Apps is what I am really passionate about. I am glad I found something what I love to do. <br/><br/>
+  <section id="About" class="about-section">
+    <div class="container-fluid section-container">
+      <div class="row">
+        <div class="col-12 text-center" data-aos="fade-down" data-aos-duration="1500">
+          <h1 class="heading" style="color: #FFFFFF;">Developer Journey</h1>
+          <p class="para" style="color: #9CA3AF; margin-bottom: 4rem;">
+            A timeline of my professional growth, commercial experience, and academic milestones.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Timeline Component -->
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+        
+        <!-- Timeline Item 1 (Left) -->
+        <div class="timeline-item left" data-aos="fade-right" data-aos-duration="1200">
+          <div class="timeline-badge">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-date">Present</span>
+              <h3 class="timeline-title">Scaling Full-Stack Platforms</h3>
+            </div>
+            <div class="timeline-card-body">
+              <p>Actively driving software updates and interface designs as a core developer for a Global Digital Solutions Provider. Managing production release lifecycles using Agile and Scrum methodologies, implementing complex frontend state architecture with Pinia, and engineering custom business modules.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 (Right) -->
+        <div class="timeline-item right" data-aos="fade-left" data-aos-duration="1200">
+          <div class="timeline-badge">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-date">July 2025</span>
+              <h3 class="timeline-title">Promoted to Software Developer</h3>
+            </div>
+            <div class="timeline-card-body">
+              <p>Accelerated to a mid-level engineering role after delivering key workflow and interface enhancements. Transitioned to architecting full production websites and modules utilizing Vue, React, NestJS, and structured relational database engines like PostgreSQL and SQLite.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 (Left) -->
+        <div class="timeline-item left" data-aos="fade-right" data-aos-duration="1200">
+          <div class="timeline-badge">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-date">Sept 2022</span>
+              <h3 class="timeline-title">Launched Commercial Engineering Career</h3>
+            </div>
+            <div class="timeline-card-body">
+              <p>Entered the tech industry as a Junior Software Developer. Spearheaded the complete UI/UX overhaul and introduced critical new features to an enterprise internal Warehouse Management application, utilizing Flutter and Shorebird for seamless code-push deployments.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 (Right) -->
+        <div class="timeline-item right" data-aos="fade-left" data-aos-duration="1200">
+          <div class="timeline-badge">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-date">July 2022</span>
+              <h3 class="timeline-title">Graduated University of Worcester</h3>
+            </div>
+            <div class="timeline-card-body">
+              <p>Completed a B.A. (Hons) in Computer Science with a 2.1 classification. Engineered a full-stack campus communication platform for a final dissertation project, specializing in dynamic layout systems and authentication protocols.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="Projectsz" class="projects-section">
+    <div class="container-fluid section-container">
+      <div class="row">
+        <div class="col-xl-12 projects" data-aos="fade-down" data-aos-duration="1500">
+          <h1 class="heading">Internal Prototypes</h1>
+          <p class="para" style="color: var(--color-text-secondary); margin-bottom: 5rem;">
+            A curated showcase of high-fidelity application designs, custom state architectures, and intuitive user flows.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Showcase Row 1: Sweeps United -->
+      <div class="row align-items-center prototype-row" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-lg-6 col-12">
+          <div class="prototype-mockup-wrapper">
+            <img src="images/sweeps1.png" alt="Sweeps United Mockup" class="prototype-img" id="sweeps-main-img">
+          </div>
+          <div class="prototype-thumbnails">
+            <button class="thumbnail-btn active" onclick="changePrototypeImage('sweeps-main-img', 'images/sweeps1.png', this)">
+              <img src="images/sweeps1.png" alt="Sweeps United Screen 1">
+            </button>
+            <button class="thumbnail-btn" onclick="changePrototypeImage('sweeps-main-img', 'images/sweeo2.png', this)">
+              <img src="images/sweeo2.png" alt="Sweeps United Screen 2">
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="prototype-info-wrapper">
+            <span class="prototype-badge">Web Application</span>
+            <h2 class="prototype-title">Sweeps United</h2>
+            <h4 class="prototype-subheading">Next-Gen Dynamic Tournament Sweepstakes Platform</h4>
+            <p class="prototype-description">
+              A high-fidelity, dark-mode web application engineered to manage tournament sweepstakes with a gamified user experience. Designed a dark, high-contrast aesthetic that features automated tournament rosters and real-time live-sync participant dashboards. Focused heavily on clean information architecture and state management to handle multi-user active sessions seamlessly.
             </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Showcase Row 2: DogDaze -->
+      <div class="row align-items-center prototype-row flex-lg-row-reverse" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <div class="col-lg-6 col-12">
+          <div class="prototype-mockup-wrapper">
+            <img src="images/dogdaze1.png" alt="DogDaze Mockup" class="prototype-img" id="dogdaze-main-img">
+          </div>
+          <div class="prototype-thumbnails">
+            <button class="thumbnail-btn active" onclick="changePrototypeImage('dogdaze-main-img', 'images/dogdaze1.png', this)">
+              <img src="images/dogdaze1.png" alt="DogDaze Screen 1">
+            </button>
+            <button class="thumbnail-btn" onclick="changePrototypeImage('dogdaze-main-img', 'images/dogdaze2.png', this)">
+              <img src="images/dogdaze2.png" alt="DogDaze Screen 2">
+            </button>
+            <button class="thumbnail-btn" onclick="changePrototypeImage('dogdaze-main-img', 'images/dogdaze3.png', this)">
+              <img src="images/dogdaze3.png" alt="DogDaze Screen 3">
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="prototype-info-wrapper">
+            <span class="prototype-badge badge-teal">Discovery Portal</span>
+            <h2 class="prototype-title">DogDaze</h2>
+            <h4 class="prototype-subheading">Curated UK Dog-Friendly Discovery Portal</h4>
+            <p class="prototype-description">
+              A clean, modern lifestyle platform built to help users find and explore top-tier dog-friendly spaces. Leveraged vibrant gradients, custom illustrative assets, and an intuitive "Discover by Category" layout to lower user interaction friction. Architected a fully responsive split-screen registration framework featuring real-time client-side form validation handling and secure user flows.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="col-xl-6 more-2">
+  </section>
 
-      <img src="image2.jpg" alt="Circle" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500">
-
-    </div>
-    <div class="col-xl-12 projects" id="Projectsz">
-
-      <h1 class="heading" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">Completed Projects.</h1>
-    </div>
-    <div class="col-xl-6 projects2 container" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
-    <img id="map" src="images/home-map.PNG" />
-    <p id="map-para" class="centered display-none">
-      Shopping Map Project <br/><br/>
-      Assignment Project, Created using HTML , CSS, JS, Google Maps API, PHP. <br/><br/>
-      Interactive Map showing most of the shops/restaurants in Worcester. <br/><br/>
-
-
-    </p>
-
-    </div>
-    <div class="col-xl-6 projects2 container" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1200">
-    <img id="nutrition" src="images/home-nutrition.PNG" />
-    <div>
-
-
-    <p  id="nutrition-para" class="centered display-none">
-      Nutrition Tracker Project <br/><br/>
-      Assignment Project, Created using HTML , CSS, JS, AOS, JQuery, PHP. <br/><br/>
-      Web App storing user's calories intake, exercise with challenges. <br/><br/>
-
-        </p>
-</div>
-
-
-    </div>
-    <div class="col-xl-6 projects2 container" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1400">
-    <img id="birthday" src="images/home-birthday.PNG" />
-    <p id="birthday-para" class="centered display-none">
-      Birthday Project <br/><br/>
-      Project, Created using HTML , CSS, JS. <br/><br/>
-      Fun Web Application with different types of games e.g. Quiz, Rock Paper Scissors etc for my Girlfriend. <br/><br/>
-      Don't tell her :) <br/><br/>
-
-
-    </p>
-    <button class="btn"><a href="projects.html">See More</a></button>
-    </div>
-
-
-    <div class="col-xl-12 contact" id="contacts">
+<section id="contacts" class="contact-section">
+<div class="container-fluid section-container">
+  <div class="row">
+    <div class="col-xl-12 contact">
       <h1 class="heading"> Contact Me</h1>
-      <form action="mailto:kacpermmlp@gmail.com" method="GET">
-        <input type="text" placeholder="Name:" />
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b7471caf-7161-4180-b28f-13abff161951">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <input type="text" name="name" placeholder="Name:" required />
         <br/>
-
-        <input type="email" placeholder="Email:" />
+        <input type="email" name="email" placeholder="Email:" required />
         <br/>
-        <textarea type="text" placeholder="Message:" /></textarea>
-          <br/>
-        <input type="submit" ></input>
+        <textarea name="message" placeholder="Message:" required></textarea>
+        <br/>
+        <input type="submit" value="Submit"></input>
       </form>
     </div>
   </div>
-  </div>
 </div>
+</section>
 
 
 
