@@ -7,19 +7,23 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navHeader && cursor) {
     tabs.forEach((tab) => {
       tab.addEventListener("mouseenter", () => {
-        tabs.forEach((t) => t.classList.remove("active"));
-        tab.classList.add("active");
-        
-        const rect = tab.getBoundingClientRect();
-        cursor.style.width = `${rect.width}px`;
-        cursor.style.left = `${tab.offsetLeft}px`;
-        cursor.style.opacity = "1";
+        if (window.innerWidth > 768) {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+          
+          const rect = tab.getBoundingClientRect();
+          cursor.style.width = `${rect.width}px`;
+          cursor.style.left = `${tab.offsetLeft}px`;
+          cursor.style.opacity = "1";
+        }
       });
     });
 
     navHeader.addEventListener("mouseleave", () => {
-      cursor.style.opacity = "0";
-      tabs.forEach((t) => t.classList.remove("active"));
+      if (window.innerWidth > 768) {
+        cursor.style.opacity = "0";
+        tabs.forEach((t) => t.classList.remove("active"));
+      }
     });
   }
 
