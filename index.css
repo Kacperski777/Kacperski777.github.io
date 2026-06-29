@@ -1584,3 +1584,185 @@ textarea {
     justify-content: center;
   }
 }
+
+/* ==========================================
+   CERTIFICATES SECTION
+   ========================================== */
+.certificates-section {
+  background-color: var(--color-bg);
+  padding: 6rem 0;
+  width: 100%;
+}
+
+.certificates-section .heading {
+  color: var(--color-primary);
+}
+
+.certificate-card {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(229, 231, 235, 0.8);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(229, 62, 62, 0.3);
+}
+
+/* Background Glow Effects */
+.certificate-glow {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.08;
+  z-index: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.certificate-card:hover .certificate-glow {
+  opacity: 0.15;
+  transform: scale(1.2);
+}
+
+.color-ai {
+  background: radial-gradient(circle, var(--color-primary) 0%, rgba(229, 62, 62, 0) 70%);
+}
+
+.color-llm {
+  background: radial-gradient(circle, #DD6B20 0%, rgba(221, 107, 32, 0) 70%);
+}
+
+.color-genai {
+  background: radial-gradient(circle, #319795 0%, rgba(49, 151, 149, 0) 70%);
+}
+
+.certificate-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.certificate-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 12px;
+  background-color: var(--color-accent-gray);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.certificate-card:hover .certificate-icon {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+/* Special hover colors for different icons to match themes */
+.certificate-card:hover:has(.color-llm) .certificate-icon {
+  background-color: #DD6B20;
+}
+.certificate-card:hover:has(.color-genai) .certificate-icon {
+  background-color: #319795;
+}
+
+.certificate-badge {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-card:has(.color-ai) .certificate-badge { color: var(--color-primary); }
+.certificate-card:has(.color-llm) .certificate-badge { color: #DD6B20; }
+.certificate-card:has(.color-genai) .certificate-badge { color: #319795; }
+
+.certificate-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  flex-grow: 0;
+}
+
+.certificate-issuer {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.certificate-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+  align-content: flex-start;
+}
+
+.skill-tag {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--color-accent-gray);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  transition: all 0.2s ease;
+}
+
+.certificate-card:hover .skill-tag {
+  background-color: #FFFFFF;
+  border-color: rgba(229, 231, 235, 1);
+}
+
+.certificate-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  margin-top: auto;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #111827;
+  color: #111827 !important;
+  background-color: transparent;
+}
+
+.certificate-btn:hover {
+  background-color: #111827;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.15);
+}
