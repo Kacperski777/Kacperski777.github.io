@@ -1650,6 +1650,10 @@ textarea {
   background: radial-gradient(circle, #319795 0%, rgba(49, 151, 149, 0) 70%);
 }
 
+.color-gpt {
+  background: radial-gradient(circle, #805AD5 0%, rgba(128, 90, 213, 0) 70%);
+}
+
 .certificate-content {
   position: relative;
   z-index: 2;
@@ -1685,6 +1689,9 @@ textarea {
 .certificate-card:hover:has(.color-genai) .certificate-icon {
   background-color: #319795;
 }
+.certificate-card:hover:has(.color-gpt) .certificate-icon {
+  background-color: #805AD5;
+}
 
 .certificate-badge {
   font-family: var(--font-heading);
@@ -1698,6 +1705,7 @@ textarea {
 .certificate-card:has(.color-ai) .certificate-badge { color: var(--color-primary); }
 .certificate-card:has(.color-llm) .certificate-badge { color: #DD6B20; }
 .certificate-card:has(.color-genai) .certificate-badge { color: #319795; }
+.certificate-card:has(.color-gpt) .certificate-badge { color: #805AD5; }
 
 .certificate-title {
   font-size: 1.35rem;
